@@ -1,0 +1,23 @@
+# Reading C:/intelFPGA_pro/18.1/modelsim_ase/tcl/vsim/pref.tcl
+# do instr_rom_rv32i_run_msim_gate_verilog.do
+# if {[file exists gate_work]} {
+# 	vdel -lib gate_work -all
+# }
+# vlib gate_work
+# vmap work gate_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.6d Lib Mapping Utility 2018.02 Feb 24 2018
+# vmap work gate_work 
+# Copying C:/intelFPGA_pro/18.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+. {instr_rom_rv32i.vo}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.6d Compiler 2018.02 Feb 24 2018
+# Start time: 21:22:20 on Nov 04,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+." instr_rom_rv32i.vo 
+# -- Compiling module instr_rom_rv32i
+# 
+# Top level modules:
+# 	instr_rom_rv32i
+# End time: 21:22:20 on Nov 04,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
