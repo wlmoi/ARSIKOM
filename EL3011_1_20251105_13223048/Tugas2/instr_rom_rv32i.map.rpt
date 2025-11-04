@@ -1,5 +1,5 @@
 Analysis & Synthesis report for instr_rom_rv32i
-Tue Nov 04 21:24:08 2025
+Tue Nov 04 21:52:27 2025
 Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
 
 
@@ -10,7 +10,15 @@ Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
   2. Analysis & Synthesis Summary
   3. Analysis & Synthesis Settings
   4. Parallel Compilation
-  5. Analysis & Synthesis Messages
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. Analysis & Synthesis RAM Summary
+  9. General Register Statistics
+ 10. Source assignments for altsyncram:rom|altsyncram_65s:auto_generated
+ 11. Parameter Settings for User Entity Instance: altsyncram:rom
+ 12. altsyncram Parameter Settings by Entity Instance
+ 13. Analysis & Synthesis Messages
 
 
 
@@ -36,21 +44,21 @@ applicable agreement for further details.
 +------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                 ;
 +-------------------------------+----------------------------------------------+
-; Analysis & Synthesis Status   ; Failed - Tue Nov 04 21:24:08 2025            ;
+; Analysis & Synthesis Status   ; Successful - Tue Nov 04 21:52:27 2025        ;
 ; Quartus II Version            ; 9.1 Build 350 03/24/2010 SP 2 SJ Web Edition ;
 ; Revision Name                 ; instr_rom_rv32i                              ;
 ; Top-level Entity Name         ; instr_rom_rv32i                              ;
 ; Family                        ; Stratix II                                   ;
-; Logic utilization             ; N/A until Partition Merge                    ;
-;     Combinational ALUTs       ; N/A until Partition Merge                    ;
-;     Dedicated logic registers ; N/A until Partition Merge                    ;
-; Total registers               ; N/A until Partition Merge                    ;
-; Total pins                    ; N/A until Partition Merge                    ;
-; Total virtual pins            ; N/A until Partition Merge                    ;
-; Total block memory bits       ; N/A until Partition Merge                    ;
-; DSP block 9-bit elements      ; N/A until Partition Merge                    ;
-; Total PLLs                    ; N/A until Partition Merge                    ;
-; Total DLLs                    ; N/A until Partition Merge                    ;
+; Logic utilization             ; N/A                                          ;
+;     Combinational ALUTs       ; 0                                            ;
+;     Dedicated logic registers ; 0                                            ;
+; Total registers               ; 0                                            ;
+; Total pins                    ; 65                                           ;
+; Total virtual pins            ; 0                                            ;
+; Total block memory bits       ; 1,024                                        ;
+; DSP block 9-bit elements      ; 0                                            ;
+; Total PLLs                    ; 0                                            ;
+; Total DLLs                    ; 0                                            ;
 +-------------------------------+----------------------------------------------+
 
 
@@ -148,13 +156,189 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+--------+
 
 
++------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                     ;
++----------------------------------+-----------------+----------------------------------+--------------------------------------------------------------------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                        ; File Name with Absolute Path                                       ;
++----------------------------------+-----------------+----------------------------------+--------------------------------------------------------------------+
+; imemory_rv32i.mif                ; yes             ; User Memory Initialization File  ; D:/ARSIKOM/EL3011_1_20251105_13223048/Tugas2/imemory_rv32i.mif     ;
+; instr_rom_rv32i.v                ; yes             ; User Verilog HDL File            ; D:/ARSIKOM/EL3011_1_20251105_13223048/Tugas2/instr_rom_rv32i.v     ;
+; altsyncram.tdf                   ; yes             ; Megafunction                     ; c:/altera/91sp2/quartus/libraries/megafunctions/altsyncram.tdf     ;
+; db/altsyncram_65s.tdf            ; yes             ; Auto-Generated Megafunction      ; D:/ARSIKOM/EL3011_1_20251105_13223048/Tugas2/db/altsyncram_65s.tdf ;
++----------------------------------+-----------------+----------------------------------+--------------------------------------------------------------------+
+
+
++------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary          ;
++----------------------------------------------+-------+
+; Resource                                     ; Usage ;
++----------------------------------------------+-------+
+; Estimated ALUTs Used                         ; 0     ;
+; Dedicated logic registers                    ; 0     ;
+;                                              ;       ;
+; Estimated ALUTs Unavailable                  ; 0     ;
+;                                              ;       ;
+; Total combinational functions                ; 0     ;
+; Combinational ALUT usage by number of inputs ;       ;
+;     -- 7 input functions                     ; 0     ;
+;     -- 6 input functions                     ; 0     ;
+;     -- 5 input functions                     ; 0     ;
+;     -- 4 input functions                     ; 0     ;
+;     -- <=3 input functions                   ; 0     ;
+;                                              ;       ;
+; Combinational ALUTs by mode                  ;       ;
+;     -- normal mode                           ; 0     ;
+;     -- extended LUT mode                     ; 0     ;
+;     -- arithmetic mode                       ; 0     ;
+;     -- shared arithmetic mode                ; 0     ;
+;                                              ;       ;
+; Estimated ALUT/register pairs used           ; 0     ;
+;                                              ;       ;
+; Total registers                              ; 0     ;
+;     -- Dedicated logic registers             ; 0     ;
+;     -- I/O registers                         ; 0     ;
+;                                              ;       ;
+;                                              ;       ;
+; I/O pins                                     ; 65    ;
+; Total block memory bits                      ; 1024  ;
+; Maximum fan-out node                         ; clock ;
+; Maximum fan-out                              ; 32    ;
+; Total fan-out                                ; 224   ;
+; Average fan-out                              ; 2.31  ;
++----------------------------------------------+-------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                ;
++---------------------------------------+-------------------+--------------+-------------------+--------------+---------+-----------+-----------+------+--------------+---------------------------------------------------------------+--------------+
+; Compilation Hierarchy Node            ; LC Combinationals ; LC Registers ; Block Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; DSP 36x36 ; Pins ; Virtual Pins ; Full Hierarchy Name                                           ; Library Name ;
++---------------------------------------+-------------------+--------------+-------------------+--------------+---------+-----------+-----------+------+--------------+---------------------------------------------------------------+--------------+
+; |instr_rom_rv32i                      ; 0 (0)             ; 0 (0)        ; 1024              ; 0            ; 0       ; 0         ; 0         ; 65   ; 0            ; |instr_rom_rv32i                                              ; work         ;
+;    |altsyncram:rom|                   ; 0 (0)             ; 0 (0)        ; 1024              ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |instr_rom_rv32i|altsyncram:rom                               ;              ;
+;       |altsyncram_65s:auto_generated| ; 0 (0)             ; 0 (0)        ; 1024              ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |instr_rom_rv32i|altsyncram:rom|altsyncram_65s:auto_generated ; work         ;
++---------------------------------------+-------------------+--------------+-------------------+--------------+---------+-----------+-----------+------+--------------+---------------------------------------------------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis RAM Summary                                                                                                                             ;
++---------------------------------------------------------+------+------+--------------+--------------+--------------+--------------+------+-------------------+
+; Name                                                    ; Type ; Mode ; Port A Depth ; Port A Width ; Port B Depth ; Port B Width ; Size ; MIF               ;
++---------------------------------------------------------+------+------+--------------+--------------+--------------+--------------+------+-------------------+
+; altsyncram:rom|altsyncram_65s:auto_generated|ALTSYNCRAM ; AUTO ; ROM  ; 32           ; 32           ; --           ; --           ; 1024 ; imemory_rv32i.mif ;
++---------------------------------------------------------+------+------+--------------+--------------+--------------+--------------+------+-------------------+
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 0     ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++---------------------------------------------------------------------+
+; Source assignments for altsyncram:rom|altsyncram_65s:auto_generated ;
++---------------------------------+--------------------+------+-------+
+; Assignment                      ; Value              ; From ; To    ;
++---------------------------------+--------------------+------+-------+
+; OPTIMIZE_POWER_DURING_SYNTHESIS ; NORMAL_COMPILATION ; -    ; -     ;
++---------------------------------+--------------------+------+-------+
+
+
++----------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: altsyncram:rom                ;
++------------------------------------+----------------------+----------------+
+; Parameter Name                     ; Value                ; Type           ;
++------------------------------------+----------------------+----------------+
+; BYTE_SIZE_BLOCK                    ; 8                    ; Untyped        ;
+; AUTO_CARRY_CHAINS                  ; ON                   ; AUTO_CARRY     ;
+; IGNORE_CARRY_BUFFERS               ; OFF                  ; IGNORE_CARRY   ;
+; AUTO_CASCADE_CHAINS                ; ON                   ; AUTO_CASCADE   ;
+; IGNORE_CASCADE_BUFFERS             ; OFF                  ; IGNORE_CASCADE ;
+; WIDTH_BYTEENA                      ; 1                    ; Untyped        ;
+; OPERATION_MODE                     ; ROM                  ; Untyped        ;
+; WIDTH_A                            ; 32                   ; Signed Integer ;
+; WIDTHAD_A                          ; 5                    ; Signed Integer ;
+; NUMWORDS_A                         ; 1                    ; Untyped        ;
+; OUTDATA_REG_A                      ; UNREGISTERED         ; Untyped        ;
+; ADDRESS_ACLR_A                     ; NONE                 ; Untyped        ;
+; OUTDATA_ACLR_A                     ; NONE                 ; Untyped        ;
+; WRCONTROL_ACLR_A                   ; NONE                 ; Untyped        ;
+; INDATA_ACLR_A                      ; NONE                 ; Untyped        ;
+; BYTEENA_ACLR_A                     ; NONE                 ; Untyped        ;
+; WIDTH_B                            ; 1                    ; Untyped        ;
+; WIDTHAD_B                          ; 1                    ; Untyped        ;
+; NUMWORDS_B                         ; 1                    ; Untyped        ;
+; INDATA_REG_B                       ; CLOCK1               ; Untyped        ;
+; WRCONTROL_WRADDRESS_REG_B          ; CLOCK1               ; Untyped        ;
+; RDCONTROL_REG_B                    ; CLOCK1               ; Untyped        ;
+; ADDRESS_REG_B                      ; CLOCK1               ; Untyped        ;
+; OUTDATA_REG_B                      ; UNREGISTERED         ; Untyped        ;
+; BYTEENA_REG_B                      ; CLOCK1               ; Untyped        ;
+; INDATA_ACLR_B                      ; NONE                 ; Untyped        ;
+; WRCONTROL_ACLR_B                   ; NONE                 ; Untyped        ;
+; ADDRESS_ACLR_B                     ; NONE                 ; Untyped        ;
+; OUTDATA_ACLR_B                     ; NONE                 ; Untyped        ;
+; RDCONTROL_ACLR_B                   ; NONE                 ; Untyped        ;
+; BYTEENA_ACLR_B                     ; NONE                 ; Untyped        ;
+; WIDTH_BYTEENA_A                    ; 1                    ; Untyped        ;
+; WIDTH_BYTEENA_B                    ; 1                    ; Untyped        ;
+; RAM_BLOCK_TYPE                     ; AUTO                 ; Untyped        ;
+; BYTE_SIZE                          ; 8                    ; Untyped        ;
+; READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE            ; Untyped        ;
+; READ_DURING_WRITE_MODE_PORT_A      ; NEW_DATA_NO_NBE_READ ; Untyped        ;
+; READ_DURING_WRITE_MODE_PORT_B      ; NEW_DATA_NO_NBE_READ ; Untyped        ;
+; INIT_FILE                          ; imemory_rv32i.mif    ; Untyped        ;
+; INIT_FILE_LAYOUT                   ; PORT_A               ; Untyped        ;
+; MAXIMUM_DEPTH                      ; 0                    ; Untyped        ;
+; CLOCK_ENABLE_INPUT_A               ; NORMAL               ; Untyped        ;
+; CLOCK_ENABLE_INPUT_B               ; NORMAL               ; Untyped        ;
+; CLOCK_ENABLE_OUTPUT_A              ; NORMAL               ; Untyped        ;
+; CLOCK_ENABLE_OUTPUT_B              ; NORMAL               ; Untyped        ;
+; CLOCK_ENABLE_CORE_A                ; USE_INPUT_CLKEN      ; Untyped        ;
+; CLOCK_ENABLE_CORE_B                ; USE_INPUT_CLKEN      ; Untyped        ;
+; ENABLE_ECC                         ; FALSE                ; Untyped        ;
+; DEVICE_FAMILY                      ; Stratix II           ; Untyped        ;
+; CBXI_PARAMETER                     ; altsyncram_65s       ; Untyped        ;
++------------------------------------+----------------------+----------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------+
+; altsyncram Parameter Settings by Entity Instance           ;
++-------------------------------------------+----------------+
+; Name                                      ; Value          ;
++-------------------------------------------+----------------+
+; Number of entity instances                ; 1              ;
+; Entity Instance                           ; altsyncram:rom ;
+;     -- OPERATION_MODE                     ; ROM            ;
+;     -- WIDTH_A                            ; 32             ;
+;     -- NUMWORDS_A                         ; 1              ;
+;     -- OUTDATA_REG_A                      ; UNREGISTERED   ;
+;     -- WIDTH_B                            ; 1              ;
+;     -- NUMWORDS_B                         ; 1              ;
+;     -- ADDRESS_REG_B                      ; CLOCK1         ;
+;     -- OUTDATA_REG_B                      ; UNREGISTERED   ;
+;     -- RAM_BLOCK_TYPE                     ; AUTO           ;
+;     -- READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE      ;
++-------------------------------------------+----------------+
+
+
 +-------------------------------+
 ; Analysis & Synthesis Messages ;
 +-------------------------------+
 Info: *******************************************************************
 Info: Running Quartus II Analysis & Synthesis
     Info: Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
-    Info: Processing started: Tue Nov 04 21:24:08 2025
+    Info: Processing started: Tue Nov 04 21:52:26 2025
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off instr_rom_rv32i -c instr_rom_rv32i
 Info: Found 1 design units, including 1 entities, in source file instr_rom_rv32i.v
     Info: Found entity 1: instr_rom_rv32i
@@ -173,12 +357,42 @@ Info: Found 1 design units, including 1 entities, in source file db/altsyncram_6
     Info: Found entity 1: altsyncram_65s
 Info: Elaborating entity "altsyncram_65s" for hierarchy "altsyncram:rom|altsyncram_65s:auto_generated"
 Warning: Variable or input pin "data_a" is defined but never used
-Error: Can't find Memory Initialization File or Hexadecimal (Intel-Format) File D:/ARSIKOM/EL3011_1_20251105_13223048/Tugas2/imemory_rv32i.mif for ROM instance  File: D:/ARSIKOM/EL3011_1_20251105_13223048/Tugas2/instr_rom_rv32i.v Line: 36
-Error: Can't elaborate user hierarchy "altsyncram:rom|altsyncram_65s:auto_generated" File: c:/altera/91sp2/quartus/libraries/megafunctions/altsyncram.tdf Line: 790
-Error: Quartus II Analysis & Synthesis was unsuccessful. 2 errors, 1 warning
-    Error: Peak virtual memory: 233 megabytes
-    Error: Processing ended: Tue Nov 04 21:24:08 2025
-    Error: Elapsed time: 00:00:00
-    Error: Total CPU time (on all processors): 00:00:01
+Warning: Design contains 27 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "PC[0]"
+    Warning (15610): No output dependent on input pin "PC[1]"
+    Warning (15610): No output dependent on input pin "PC[7]"
+    Warning (15610): No output dependent on input pin "PC[8]"
+    Warning (15610): No output dependent on input pin "PC[9]"
+    Warning (15610): No output dependent on input pin "PC[10]"
+    Warning (15610): No output dependent on input pin "PC[11]"
+    Warning (15610): No output dependent on input pin "PC[12]"
+    Warning (15610): No output dependent on input pin "PC[13]"
+    Warning (15610): No output dependent on input pin "PC[14]"
+    Warning (15610): No output dependent on input pin "PC[15]"
+    Warning (15610): No output dependent on input pin "PC[16]"
+    Warning (15610): No output dependent on input pin "PC[17]"
+    Warning (15610): No output dependent on input pin "PC[18]"
+    Warning (15610): No output dependent on input pin "PC[19]"
+    Warning (15610): No output dependent on input pin "PC[20]"
+    Warning (15610): No output dependent on input pin "PC[21]"
+    Warning (15610): No output dependent on input pin "PC[22]"
+    Warning (15610): No output dependent on input pin "PC[23]"
+    Warning (15610): No output dependent on input pin "PC[24]"
+    Warning (15610): No output dependent on input pin "PC[25]"
+    Warning (15610): No output dependent on input pin "PC[26]"
+    Warning (15610): No output dependent on input pin "PC[27]"
+    Warning (15610): No output dependent on input pin "PC[28]"
+    Warning (15610): No output dependent on input pin "PC[29]"
+    Warning (15610): No output dependent on input pin "PC[30]"
+    Warning (15610): No output dependent on input pin "PC[31]"
+Info: Implemented 97 device resources after synthesis - the final resource count might be different
+    Info: Implemented 33 input pins
+    Info: Implemented 32 output pins
+    Info: Implemented 32 RAM segments
+Info: Quartus II Analysis & Synthesis was successful. 0 errors, 29 warnings
+    Info: Peak virtual memory: 232 megabytes
+    Info: Processing ended: Tue Nov 04 21:52:27 2025
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:01
 
 

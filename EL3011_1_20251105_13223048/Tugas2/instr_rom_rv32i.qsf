@@ -53,7 +53,7 @@ set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 set_global_assignment -name LL_ROOT_REGION ON -section_id "Root Region"
 set_global_assignment -name LL_MEMBER_STATE LOCKED -section_id "Root Region"
-set_global_assignment -name MIF_FILE imemory.mif
+set_global_assignment -name MIF_FILE imemory_rv32i.mif
 set_global_assignment -name VERILOG_FILE instr_rom_rv32i.v
 set_global_assignment -name VERILOG_FILE instr_rom_rv32i_tb.v
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

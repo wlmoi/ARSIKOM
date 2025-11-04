@@ -35,3 +35,47 @@ module instr_rom_rv32i (
     .data_a   (32'b0) 
   ); 
 endmodule 
+
+/*
+
+# Buka Command Prompt
+cd D:\ARSIKOM\EL3011_1_20251105_13223048\Tugas2
+
+
+vlib work
+vlog instr_rom_rv32i.v instr_rom_rv32i_tb.v
+vsim instr_rom_rv32i_tb
+
+run 1000ns
+
+
+PERTAMA delete work...:
+del /F /Q work
+rmdir /S /Q work
+vlib work
+vlog instr_rom_rv32i.v instr_rom_rv32i_tb.v
+
+KEDUA JALANKAN 
+vlib work
+vmap work work
+
+
+vlog instr_rom_rv32i.v instr_rom_rv32i_tb.v
+
+vsim instr_rom_rv32i_tb
+run 500ns
+
+Kalo malas ya gini TARUK DI MODELSIMNYA CONSOLE:
+cd D:/ARSIKOM/EL3011_1_20251105_13223048/Tugas2; vlib work; vmap work work; vlog instr_rom_rv32i.v instr_rom_rv32i_tb.v; vsim instr_rom_rv32i_tb; run 500ns
+
+KALAU ALTERA TIDAK KETEMU
+vlog "C:/intelFPGA_lite/18.1/quartus/eda/sim_lib/altera_mf.v"
+vlog "C:/altera/91sp2/quartus/eda/sim_lib/altera_mf.v" 
+yang 9.1 <--- Ini bisa
+
+vlog instr_rom_rv32i.v instr_rom_rv32i_tb.v
+vsim instr_rom_rv32i_tb
+run 500ns
+
+
+*/
