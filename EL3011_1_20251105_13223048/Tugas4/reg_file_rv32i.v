@@ -40,3 +40,14 @@ rs1 <= (rs1_addr == 5'd0) ? 32'b0 : rf[rs1_addr];
 rs2 <= (rs2_addr == 5'd0) ? 32'b0 : rf[rs2_addr]; 
 end 
 endmodule 
+
+/*
+cd D:/ARSIKOM/EL3011_1_20251105_13223048/Tugas4
+vlib work
+vmap work work
+vlog "C:/altera/91sp2/quartus/eda/sim_lib/altera_mf.v"
+vlog reg_file_rv32i.v reg_file_rv32i_tb.v
+vsim reg_file_rv32i_tb
+add wave *
+run 1000ns
+*/
