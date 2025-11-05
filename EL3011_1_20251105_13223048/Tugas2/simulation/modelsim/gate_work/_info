@@ -9,24 +9,23 @@ z2
 cModel Technology
 Z0 dD:/ARSIKOM/EL3011_1_20251105_13223048/Tugas2/simulation/modelsim
 vinstr_rom_rv32i
-!s110 1762267964
+!s110 1762301782
 !i10b 1
 !s100 R5oAgHTd]fFlF>eQHAnQX2
-I4Sae^4FZYA7LDXzJfJ9=N3
+IWR=WFiglEO@@0ghR>4<ia0
 VDg1SIo80bB@j0V0VzS_@n1
 R0
-w1762267955
-8instr_rom_rv32i.vo
-Finstr_rom_rv32i.vo
+w1762301710
+8D:/ARSIKOM/EL3011_1_20251105_13223048/Tugas2/simulation/modelsim/instr_rom_rv32i.vo
+FD:/ARSIKOM/EL3011_1_20251105_13223048/Tugas2/simulation/modelsim/instr_rom_rv32i.vo
 L0 31
 OV;L;10.6d;65
 r1
 !s85 0
 31
-!s108 1762267964.000000
-!s107 instr_rom_rv32i.vo|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+.|instr_rom_rv32i.vo|
+!s108 1762301781.000000
+!s107 D:/ARSIKOM/EL3011_1_20251105_13223048/Tugas2/simulation/modelsim/instr_rom_rv32i.vo|
+!s90 -reportprogress|300|-work|work|D:/ARSIKOM/EL3011_1_20251105_13223048/Tugas2/simulation/modelsim/instr_rom_rv32i.vo|
 !i113 1
-o-vlog01compat -work work
-!s92 -vlog01compat -work work +incdir+.
+o-work work
 tCvgOpt 0
