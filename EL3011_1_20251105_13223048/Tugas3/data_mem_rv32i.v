@@ -84,3 +84,7 @@ module data_mem_rv32i (
     );
 
 endmodule
+
+/*
+cd D:/ARSIKOM/EL3011_1_20251105_13223048/Tugas3; vlib work; vmap work work; vlog data_mem_rv32i.v data_mem_rv32i_tb.v; vsim data_mem_rv32i_tb; run 500ns
+*/

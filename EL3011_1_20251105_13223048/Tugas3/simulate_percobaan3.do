@@ -13,6 +13,8 @@ vlog "C:/intelFPGA_pro/18.1/quartus/eda/sim_lib/220model.v"
 vlog "C:/intelFPGA_pro/18.1/quartus/eda/sim_lib/sgate.v"
 vlog "C:/intelFPGA_pro/18.1/quartus/eda/sim_lib/altera_mf.v"
 
+
+
 # Kompilasi desain dan testbench
 vlog instr_rom_rv32i.v
 vlog instr_rom_rv32i_tb.v

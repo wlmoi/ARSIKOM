@@ -119,4 +119,6 @@ cd D:\ARSIKOM\EL3011_1_20251105_13223048\Tugas2
 iverilog -o instr_rom_tb.vvp instr_rom_rv32i.v instr_rom_rv32i_tb.v
 vvp instr_rom_tb.vvp
 gtkwave instr_rom_rv32i_tb.vcd
+
+
 */
