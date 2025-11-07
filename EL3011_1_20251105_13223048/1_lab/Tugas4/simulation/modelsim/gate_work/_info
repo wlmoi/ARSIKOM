@@ -1,0 +1,31 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/ARSIKOM/EL3011_1_20251105_13223048/Tugas4/simulation/modelsim
+vreg_file_rv32i
+!s110 1762328098
+!i10b 1
+!s100 >?1bozXnFT?>L[1P:k@[B0
+IG?S[HGj<aBl?h7:;bdP=o2
+VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1762327945
+8D:/ARSIKOM/EL3011_1_20251105_13223048/Tugas4/simulation/modelsim/reg_file_rv32i.vo
+FD:/ARSIKOM/EL3011_1_20251105_13223048/Tugas4/simulation/modelsim/reg_file_rv32i.vo
+L0 31
+OV;L;10.6d;65
+r1
+!s85 0
+31
+!s108 1762328096.000000
+!s107 D:/ARSIKOM/EL3011_1_20251105_13223048/Tugas4/simulation/modelsim/reg_file_rv32i.vo|
+!s90 -reportprogress|300|-work|work|D:/ARSIKOM/EL3011_1_20251105_13223048/Tugas4/simulation/modelsim/reg_file_rv32i.vo|
+!i113 1
+o-work work
+tCvgOpt 0
