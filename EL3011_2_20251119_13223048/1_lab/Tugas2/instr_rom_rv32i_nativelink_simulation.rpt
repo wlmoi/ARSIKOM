@@ -1,0 +1,358 @@
+Info: Start Nativelink Simulation process
+
+========= EDA Simulation Settings =====================
+
+Sim Mode              :  Gate
+Family                :  stratixii
+Quartus root          :  c:/altera/91sp2/quartus/bin/
+Quartus sim root      :  c:/altera/91sp2/quartus/eda/sim_lib
+Simulation Tool       :  modelsim-altera
+Simulation Language   :  verilog
+Simulation Mode       :  GUI
+Sim Output File       :  instr_rom_rv32i.vo
+Sim SDF file          :  instr_rom_rv32i__verilog.sdo
+Sim dir               :  simulation\modelsim
+
+=======================================================
+
+Info: Starting NativeLink simulation with ModelSim-Altera software
+Sourced NativeLink script c:/altera/91sp2/quartus/common/tcl/internal/nativelink/modelsim.tcl
+Warning: File instr_rom_rv32i_run_msim_gate_verilog.do already exists - backing up current file as instr_rom_rv32i_run_msim_gate_verilog.do.bak5
+Probing transcript
+ModelSim-Altera Info: # Reading C:/intelFPGA_pro/18.1/modelsim_ase/tcl/vsim/pref.tcl
+ModelSim-Altera Info: # do instr_rom_rv32i_run_msim_gate_verilog.do
+ModelSim-Altera Info: # if {[file exists gate_work]} {
+ModelSim-Altera Info: # 	vdel -lib gate_work -all
+ModelSim-Altera Info: # }
+ModelSim-Altera Info: # vlib gate_work
+ModelSim-Altera Info: # vmap work gate_work
+ModelSim-Altera Info: # Model Technology ModelSim - Intel FPGA Edition vmap 10.6d Lib Mapping Utility 2018.02 Feb 24 2018
+ModelSim-Altera Info: # vmap work gate_work 
+ModelSim-Altera Info: # Modifying C:/intelFPGA_pro/18.1/modelsim_ase/win32aloem/../modelsim.ini
+ModelSim-Altera Info: # 
+ModelSim-Altera Info: # vlog -vlog01compat -work work +incdir+. {instr_rom_rv32i.vo}
+ModelSim-Altera Info: # Model Technology ModelSim - Intel FPGA Edition vlog 10.6d Compiler 2018.02 Feb 24 2018
+ModelSim-Altera Info: # Start time: 10:56:49 on Nov 05,2025
+ModelSim-Altera Info: # vlog -reportprogress 300 -vlog01compat -work work "+incdir+." instr_rom_rv32i.vo 
+ModelSim-Altera Info: # -- Compiling module instr_rom_rv32i
+ModelSim-Altera Info: # 
+ModelSim-Altera Info: # Top level modules:
+ModelSim-Altera Info: # 	instr_rom_rv32i
+ModelSim-Altera Info: # End time: 10:56:49 on Nov 05,2025, Elapsed time: 0:00:00
+ModelSim-Altera Info: # Errors: 0, Warnings: 0
+ModelSim-Altera Info: # 
+ModelSim-Altera Info: vsim -gui -l msim_transcript work.instr_rom_rv32i
+ModelSim-Altera Info: # vsim -gui -l msim_transcript work.instr_rom_rv32i 
+ModelSim-Altera Info: # Start time: 10:57:36 on Nov 05,2025
+ModelSim-Altera Info: # Loading work.instr_rom_rv32i
+ModelSim-Altera Error: # ** Error: (vsim-3033) instr_rom_rv32i.vo(162): Instantiation of 'stratixii_io' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /instr_rom_rv32i File: instr_rom_rv32i.vo
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             D:/ARSIKOM/EL3011_1_20251105_13223048/Tugas2/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) instr_rom_rv32i.vo(212): Instantiation of 'stratixii_clkctrl' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /instr_rom_rv32i File: instr_rom_rv32i.vo
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             D:/ARSIKOM/EL3011_1_20251105_13223048/Tugas2/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) instr_rom_rv32i.vo(224): Instantiation of 'stratixii_io' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /instr_rom_rv32i File: instr_rom_rv32i.vo
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             D:/ARSIKOM/EL3011_1_20251105_13223048/Tugas2/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) instr_rom_rv32i.vo(274): Instantiation of 'stratixii_io' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /instr_rom_rv32i File: instr_rom_rv32i.vo
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             D:/ARSIKOM/EL3011_1_20251105_13223048/Tugas2/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) instr_rom_rv32i.vo(324): Instantiation of 'stratixii_io' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /instr_rom_rv32i File: instr_rom_rv32i.vo
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             D:/ARSIKOM/EL3011_1_20251105_13223048/Tugas2/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) instr_rom_rv32i.vo(374): Instantiation of 'stratixii_io' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /instr_rom_rv32i File: instr_rom_rv32i.vo
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             D:/ARSIKOM/EL3011_1_20251105_13223048/Tugas2/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) instr_rom_rv32i.vo(424): Instantiation of 'stratixii_io' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /instr_rom_rv32i File: instr_rom_rv32i.vo
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             D:/ARSIKOM/EL3011_1_20251105_13223048/Tugas2/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) instr_rom_rv32i.vo(474): Instantiation of 'stratixii_ram_block' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /instr_rom_rv32i File: instr_rom_rv32i.vo
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             D:/ARSIKOM/EL3011_1_20251105_13223048/Tugas2/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) instr_rom_rv32i.vo(520): Instantiation of 'stratixii_io' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /instr_rom_rv32i File: instr_rom_rv32i.vo
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             D:/ARSIKOM/EL3011_1_20251105_13223048/Tugas2/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) instr_rom_rv32i.vo(570): Instantiation of 'stratixii_io' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /instr_rom_rv32i File: instr_rom_rv32i.vo
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             D:/ARSIKOM/EL3011_1_20251105_13223048/Tugas2/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) instr_rom_rv32i.vo(620): Instantiation of 'stratixii_io' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /instr_rom_rv32i File: instr_rom_rv32i.vo
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             D:/ARSIKOM/EL3011_1_20251105_13223048/Tugas2/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) instr_rom_rv32i.vo(670): Instantiation of 'stratixii_io' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /instr_rom_rv32i File: instr_rom_rv32i.vo
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             D:/ARSIKOM/EL3011_1_20251105_13223048/Tugas2/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) instr_rom_rv32i.vo(720): Instantiation of 'stratixii_io' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /instr_rom_rv32i File: instr_rom_rv32i.vo
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             D:/ARSIKOM/EL3011_1_20251105_13223048/Tugas2/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) instr_rom_rv32i.vo(770): Instantiation of 'stratixii_io' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /instr_rom_rv32i File: instr_rom_rv32i.vo
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             D:/ARSIKOM/EL3011_1_20251105_13223048/Tugas2/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) instr_rom_rv32i.vo(820): Instantiation of 'stratixii_io' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /instr_rom_rv32i File: instr_rom_rv32i.vo
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             D:/ARSIKOM/EL3011_1_20251105_13223048/Tugas2/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) instr_rom_rv32i.vo(870): Instantiation of 'stratixii_io' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /instr_rom_rv32i File: instr_rom_rv32i.vo
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             D:/ARSIKOM/EL3011_1_20251105_13223048/Tugas2/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) instr_rom_rv32i.vo(920): Instantiation of 'stratixii_io' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /instr_rom_rv32i File: instr_rom_rv32i.vo
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             D:/ARSIKOM/EL3011_1_20251105_13223048/Tugas2/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) instr_rom_rv32i.vo(970): Instantiation of 'stratixii_io' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /instr_rom_rv32i File: instr_rom_rv32i.vo
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             D:/ARSIKOM/EL3011_1_20251105_13223048/Tugas2/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) instr_rom_rv32i.vo(1020): Instantiation of 'stratixii_io' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /instr_rom_rv32i File: instr_rom_rv32i.vo
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             D:/ARSIKOM/EL3011_1_20251105_13223048/Tugas2/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) instr_rom_rv32i.vo(1070): Instantiation of 'stratixii_io' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /instr_rom_rv32i File: instr_rom_rv32i.vo
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             D:/ARSIKOM/EL3011_1_20251105_13223048/Tugas2/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) instr_rom_rv32i.vo(1120): Instantiation of 'stratixii_io' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /instr_rom_rv32i File: instr_rom_rv32i.vo
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             D:/ARSIKOM/EL3011_1_20251105_13223048/Tugas2/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) instr_rom_rv32i.vo(1170): Instantiation of 'stratixii_io' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /instr_rom_rv32i File: instr_rom_rv32i.vo
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             D:/ARSIKOM/EL3011_1_20251105_13223048/Tugas2/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) instr_rom_rv32i.vo(1220): Instantiation of 'stratixii_io' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /instr_rom_rv32i File: instr_rom_rv32i.vo
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             D:/ARSIKOM/EL3011_1_20251105_13223048/Tugas2/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) instr_rom_rv32i.vo(1270): Instantiation of 'stratixii_io' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /instr_rom_rv32i File: instr_rom_rv32i.vo
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             D:/ARSIKOM/EL3011_1_20251105_13223048/Tugas2/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) instr_rom_rv32i.vo(1320): Instantiation of 'stratixii_io' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /instr_rom_rv32i File: instr_rom_rv32i.vo
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             D:/ARSIKOM/EL3011_1_20251105_13223048/Tugas2/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) instr_rom_rv32i.vo(1370): Instantiation of 'stratixii_io' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /instr_rom_rv32i File: instr_rom_rv32i.vo
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             D:/ARSIKOM/EL3011_1_20251105_13223048/Tugas2/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) instr_rom_rv32i.vo(1420): Instantiation of 'stratixii_io' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /instr_rom_rv32i File: instr_rom_rv32i.vo
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             D:/ARSIKOM/EL3011_1_20251105_13223048/Tugas2/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) instr_rom_rv32i.vo(1470): Instantiation of 'stratixii_io' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /instr_rom_rv32i File: instr_rom_rv32i.vo
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             D:/ARSIKOM/EL3011_1_20251105_13223048/Tugas2/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) instr_rom_rv32i.vo(1520): Instantiation of 'stratixii_io' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /instr_rom_rv32i File: instr_rom_rv32i.vo
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             D:/ARSIKOM/EL3011_1_20251105_13223048/Tugas2/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) instr_rom_rv32i.vo(1570): Instantiation of 'stratixii_io' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /instr_rom_rv32i File: instr_rom_rv32i.vo
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             D:/ARSIKOM/EL3011_1_20251105_13223048/Tugas2/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) instr_rom_rv32i.vo(1620): Instantiation of 'stratixii_io' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /instr_rom_rv32i File: instr_rom_rv32i.vo
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             D:/ARSIKOM/EL3011_1_20251105_13223048/Tugas2/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) instr_rom_rv32i.vo(1670): Instantiation of 'stratixii_io' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /instr_rom_rv32i File: instr_rom_rv32i.vo
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             D:/ARSIKOM/EL3011_1_20251105_13223048/Tugas2/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) instr_rom_rv32i.vo(1720): Instantiation of 'stratixii_io' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /instr_rom_rv32i File: instr_rom_rv32i.vo
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             D:/ARSIKOM/EL3011_1_20251105_13223048/Tugas2/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) instr_rom_rv32i.vo(1770): Instantiation of 'stratixii_io' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /instr_rom_rv32i File: instr_rom_rv32i.vo
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             D:/ARSIKOM/EL3011_1_20251105_13223048/Tugas2/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) instr_rom_rv32i.vo(1820): Instantiation of 'stratixii_io' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /instr_rom_rv32i File: instr_rom_rv32i.vo
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             D:/ARSIKOM/EL3011_1_20251105_13223048/Tugas2/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) instr_rom_rv32i.vo(1870): Instantiation of 'stratixii_io' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /instr_rom_rv32i File: instr_rom_rv32i.vo
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             D:/ARSIKOM/EL3011_1_20251105_13223048/Tugas2/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) instr_rom_rv32i.vo(1920): Instantiation of 'stratixii_io' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /instr_rom_rv32i File: instr_rom_rv32i.vo
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             D:/ARSIKOM/EL3011_1_20251105_13223048/Tugas2/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) instr_rom_rv32i.vo(1970): Instantiation of 'stratixii_io' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /instr_rom_rv32i File: instr_rom_rv32i.vo
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             D:/ARSIKOM/EL3011_1_20251105_13223048/Tugas2/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) instr_rom_rv32i.vo(2020): Instantiation of 'stratixii_io' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /instr_rom_rv32i File: instr_rom_rv32i.vo
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             D:/ARSIKOM/EL3011_1_20251105_13223048/Tugas2/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) instr_rom_rv32i.vo(2070): Instantiation of 'stratixii_io' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /instr_rom_rv32i File: instr_rom_rv32i.vo
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             D:/ARSIKOM/EL3011_1_20251105_13223048/Tugas2/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) instr_rom_rv32i.vo(2120): Instantiation of 'stratixii_io' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /instr_rom_rv32i File: instr_rom_rv32i.vo
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             D:/ARSIKOM/EL3011_1_20251105_13223048/Tugas2/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) instr_rom_rv32i.vo(2170): Instantiation of 'stratixii_io' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /instr_rom_rv32i File: instr_rom_rv32i.vo
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             D:/ARSIKOM/EL3011_1_20251105_13223048/Tugas2/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) instr_rom_rv32i.vo(2220): Instantiation of 'stratixii_io' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /instr_rom_rv32i File: instr_rom_rv32i.vo
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             D:/ARSIKOM/EL3011_1_20251105_13223048/Tugas2/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) instr_rom_rv32i.vo(2270): Instantiation of 'stratixii_io' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /instr_rom_rv32i File: instr_rom_rv32i.vo
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             D:/ARSIKOM/EL3011_1_20251105_13223048/Tugas2/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) instr_rom_rv32i.vo(2320): Instantiation of 'stratixii_io' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /instr_rom_rv32i File: instr_rom_rv32i.vo
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             D:/ARSIKOM/EL3011_1_20251105_13223048/Tugas2/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) instr_rom_rv32i.vo(2370): Instantiation of 'stratixii_io' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /instr_rom_rv32i File: instr_rom_rv32i.vo
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             D:/ARSIKOM/EL3011_1_20251105_13223048/Tugas2/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) instr_rom_rv32i.vo(2420): Instantiation of 'stratixii_io' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /instr_rom_rv32i File: instr_rom_rv32i.vo
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             D:/ARSIKOM/EL3011_1_20251105_13223048/Tugas2/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) instr_rom_rv32i.vo(2470): Instantiation of 'stratixii_io' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /instr_rom_rv32i File: instr_rom_rv32i.vo
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             D:/ARSIKOM/EL3011_1_20251105_13223048/Tugas2/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) instr_rom_rv32i.vo(2520): Instantiation of 'stratixii_io' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /instr_rom_rv32i File: instr_rom_rv32i.vo
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             D:/ARSIKOM/EL3011_1_20251105_13223048/Tugas2/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) instr_rom_rv32i.vo(2570): Instantiation of 'stratixii_io' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /instr_rom_rv32i File: instr_rom_rv32i.vo
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             D:/ARSIKOM/EL3011_1_20251105_13223048/Tugas2/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) instr_rom_rv32i.vo(2620): Instantiation of 'stratixii_io' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /instr_rom_rv32i File: instr_rom_rv32i.vo
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             D:/ARSIKOM/EL3011_1_20251105_13223048/Tugas2/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) instr_rom_rv32i.vo(2670): Instantiation of 'stratixii_io' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /instr_rom_rv32i File: instr_rom_rv32i.vo
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             D:/ARSIKOM/EL3011_1_20251105_13223048/Tugas2/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) instr_rom_rv32i.vo(2720): Instantiation of 'stratixii_io' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /instr_rom_rv32i File: instr_rom_rv32i.vo
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             D:/ARSIKOM/EL3011_1_20251105_13223048/Tugas2/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) instr_rom_rv32i.vo(2770): Instantiation of 'stratixii_io' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /instr_rom_rv32i File: instr_rom_rv32i.vo
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             D:/ARSIKOM/EL3011_1_20251105_13223048/Tugas2/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) instr_rom_rv32i.vo(2820): Instantiation of 'stratixii_io' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /instr_rom_rv32i File: instr_rom_rv32i.vo
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             D:/ARSIKOM/EL3011_1_20251105_13223048/Tugas2/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) instr_rom_rv32i.vo(2870): Instantiation of 'stratixii_io' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /instr_rom_rv32i File: instr_rom_rv32i.vo
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             D:/ARSIKOM/EL3011_1_20251105_13223048/Tugas2/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) instr_rom_rv32i.vo(2920): Instantiation of 'stratixii_io' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /instr_rom_rv32i File: instr_rom_rv32i.vo
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             D:/ARSIKOM/EL3011_1_20251105_13223048/Tugas2/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) instr_rom_rv32i.vo(2970): Instantiation of 'stratixii_io' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /instr_rom_rv32i File: instr_rom_rv32i.vo
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             D:/ARSIKOM/EL3011_1_20251105_13223048/Tugas2/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) instr_rom_rv32i.vo(3020): Instantiation of 'stratixii_io' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /instr_rom_rv32i File: instr_rom_rv32i.vo
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             D:/ARSIKOM/EL3011_1_20251105_13223048/Tugas2/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) instr_rom_rv32i.vo(3070): Instantiation of 'stratixii_io' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /instr_rom_rv32i File: instr_rom_rv32i.vo
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             D:/ARSIKOM/EL3011_1_20251105_13223048/Tugas2/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) instr_rom_rv32i.vo(3120): Instantiation of 'stratixii_io' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /instr_rom_rv32i File: instr_rom_rv32i.vo
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             D:/ARSIKOM/EL3011_1_20251105_13223048/Tugas2/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) instr_rom_rv32i.vo(3170): Instantiation of 'stratixii_io' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /instr_rom_rv32i File: instr_rom_rv32i.vo
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             D:/ARSIKOM/EL3011_1_20251105_13223048/Tugas2/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) instr_rom_rv32i.vo(3220): Instantiation of 'stratixii_io' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /instr_rom_rv32i File: instr_rom_rv32i.vo
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             D:/ARSIKOM/EL3011_1_20251105_13223048/Tugas2/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) instr_rom_rv32i.vo(3270): Instantiation of 'stratixii_io' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /instr_rom_rv32i File: instr_rom_rv32i.vo
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             D:/ARSIKOM/EL3011_1_20251105_13223048/Tugas2/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) instr_rom_rv32i.vo(3320): Instantiation of 'stratixii_io' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /instr_rom_rv32i File: instr_rom_rv32i.vo
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             D:/ARSIKOM/EL3011_1_20251105_13223048/Tugas2/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) instr_rom_rv32i.vo(3370): Instantiation of 'stratixii_io' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /instr_rom_rv32i File: instr_rom_rv32i.vo
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             D:/ARSIKOM/EL3011_1_20251105_13223048/Tugas2/simulation/modelsim/gate_work
+ModelSim-Altera Error: # ** Error: (vsim-3033) instr_rom_rv32i.vo(3420): Instantiation of 'stratixii_io' failed. The design unit was not found.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /instr_rom_rv32i File: instr_rom_rv32i.vo
+ModelSim-Altera Info: #         Searched libraries:
+ModelSim-Altera Info: #             D:/ARSIKOM/EL3011_1_20251105_13223048/Tugas2/simulation/modelsim/gate_work
+ModelSim-Altera Info: # Error loading design
+ModelSim-Altera Info: # End time: 10:57:38 on Nov 05,2025, Elapsed time: 0:00:02
+ModelSim-Altera Info: # Errors: 67, Warnings: 0
+Error: Errors encountered while running modelsim do file
+Error: NativeLink simulation flow was NOT successful
+
+
+
+================The following additional information is provided to help identify the cause of error while running nativelink scripts=================
+Nativelink TCL script failed with errorCode:  1
+Nativelink TCL script failed with errorInfo:  1
+    (procedure "launch_sim" line 1)
+    invoked from within
+"launch_sim launch_args_hash"
+    ("eval" body line 1)
+    invoked from within
+"eval launch_sim launch_args_hash"
+    invoked from within
+"if [ info exists ::errorCode ] {
+				set savedCode $::errorCode
+				set savedInfo $::errorInfo
+				error $result $savedInfo $savedCode
+			} else {
+			..."
+    invoked from within
+"if [catch {eval launch_sim launch_args_hash} result ] {
+			set status 1
+			if [ info exists ::errorCode ] {
+				set savedCode $::errorCode
+				set sav..."
+    (procedure "run_sim" line 85)
+    invoked from within
+"run_sim run_sim_args_hash"
+    invoked from within
+"if [ info exists ::errorCode ] {
+			set savedCode $::errorCode
+			set savedInfo $::errorInfo
+			error "$result" $savedInfo $savedCode
+		} else {
+			er..."
+    (procedure "run_eda_simulation_tool" line 257)
+    invoked from within
+"run_eda_simulation_tool eda_opts_hash"
