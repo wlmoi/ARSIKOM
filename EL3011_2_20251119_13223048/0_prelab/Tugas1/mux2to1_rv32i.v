@@ -7,11 +7,20 @@
 // Nama File  : mux2to1_rv32i.v
 // Deskripsi  : Desain multiplexer 2-ke-1 generik 32-bit
 
-module mux2to1_rv32i #(parameter WIDTH = 32) (
-    input  wire [WIDTH-1:0] in0, // Input pertama
-    input  wire [WIDTH-1:0] in1, // Input kedua
-    input  wire sel,             // Sinyal seleksi (0 = in0, 1 = in1)
-    output wire [WIDTH-1:0] out  // Output yang dipilih
+module mux2to1_rv32i (
+    input wire [31:0] A, 
+    input wire [31:0] B,  
+    input wire Selector,   
+    output reg [31:0] Y 
 );
-    assign out = sel ? in1 : in0; // Logika multiplexer
+
+    always @(*) begin
+        if (Selector == 1'b0) begin
+            Y = A; 
+        end
+        else begin
+            Y = B; 
+        end
+    end
+
 endmodule

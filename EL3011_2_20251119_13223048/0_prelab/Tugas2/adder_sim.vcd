@@ -1,5 +1,5 @@
 $date
-	Tue Nov 18 15:01:15 2025
+	Tue Nov 18 15:36:30 2025
 $end
 $version
 	Icarus Verilog
@@ -12,7 +12,7 @@ $var wire 32 ! PCout_tb [31:0] $end
 $var reg 32 " PCin_tb [31:0] $end
 $scope module uut $end
 $var wire 32 # PCin [31:0] $end
-$var wire 32 $ PCout [31:0] $end
+$var wire 32 $ PCoutPlus4 [31:0] $end
 $upscope $end
 $upscope $end
 $enddefinitions $end
