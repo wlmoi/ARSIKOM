@@ -12,13 +12,13 @@
 module tb_pc_4_adder_rv32i;
 
     // Deklarasi sinyal testbench
-    reg [31:0] PCold_tb;
-    wire [31:0] PC_4_inc_tb;
+    reg [31:0] PCin_tb;
+    wire [31:0] PCout_tb;
 
     // Instansiasi Unit Under Test (UUT)
     pc_4_adder_rv32i uut (
-        .PCold(PCold_tb),
-        .PC_4_inc(PC_4_inc_tb)
+        .PCin(PCin_tb),
+        .PCout(PCout_tb)
     );
 
     initial begin
@@ -27,13 +27,13 @@ module tb_pc_4_adder_rv32i;
         $dumpvars(0, tb_pc_4_adder_rv32i);
 
         // Kasus uji: PCold = 0
-        PCold_tb = 32'h00000000; #10; // Harapannya: PC_4_inc = 0x00000004
+        PCin_tb = 32'h00000000; #10; // Harapannya: PCout = 0x00000004
         // Kasus uji: PCold = 0x00000004
-        PCold_tb = 32'h00000004; #10; // Harapannya: PC_4_inc = 0x00000008
+        PCin_tb = 32'h00000004; #10; // Harapannya: PCout = 0x00000008
         // Kasus uji: PCold mendekati nilai maksimum (wrap-around)
-        PCold_tb = 32'hFFFFFFFC; #10; // Harapannya: PC_4_inc = 0x00000000
+        PCin_tb = 32'hFFFFFFFC; #10; // Harapannya: PCout = 0x00000000
         // Kasus uji: Nilai acak
-        PCold_tb = 32'h12345678; #10; // Harapannya: PC_4_inc = 0x1234567C
+        PCin_tb = 32'h12345678; #10; // Harapannya: PCout = 0x1234567C
 
         $display("Simulasi 4-adder selesai.");
         $finish;
