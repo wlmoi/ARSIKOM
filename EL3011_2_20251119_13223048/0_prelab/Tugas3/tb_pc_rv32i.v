@@ -21,8 +21,8 @@ module tb_pc_rv32i;
     pc_rv32i uut (
         .clk(clk_tb),
         .reset(reset_tb),
-        .next_pc(next_pc_tb),
-        .pc(pc_tb)
+        .PCout(next_pc_tb),
+        .PCin(pc_tb)
     );
 
     // Generasi clock

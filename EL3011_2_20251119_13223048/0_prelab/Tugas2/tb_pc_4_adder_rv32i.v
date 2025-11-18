@@ -18,7 +18,7 @@ module tb_pc_4_adder_rv32i;
     // Instansiasi Unit Under Test (UUT)
     pc_4_adder_rv32i uut (
         .PCin(PCin_tb),
-        .PCout(PCout_tb)
+        .PCoutPlus4(PCout_tb)
     );
 
     initial begin

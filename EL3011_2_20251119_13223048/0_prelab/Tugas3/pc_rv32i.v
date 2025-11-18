@@ -8,18 +8,17 @@
 // Deskripsi  : Desain Program Counter (PC) 32-bit untuk RV32I
 
 module pc_rv32i (
-    input  wire        clk,      // Sinyal clock
-    input  wire        reset,    // Sinyal reset (asinkron aktif-tinggi)
-    input  wire [31:0] next_pc,  // Alamat PC selanjutnya
-    output reg  [31:0] pc        // Output Program Counter
+    input wire clk,
+    input wire reset, 
+    input wire [31:0] PCin,         
+    output reg [31:0] PCout 
 );
-
-    always @(posedge clk or posedge reset) begin
-        if (reset) begin
-            pc <= 32'h0;      // Reset PC ke 0
-        end else begin
-            pc <= next_pc;    // Perbarui PC pada tepi naik clock
+    always @(posedge clk or negedge reset) begin
+        if (reset == 1'b0) begin
+            PCout <= 32'h0;
+        end
+        else begin
+            PCout <= PCin;
         end
     end
-
 endmodule

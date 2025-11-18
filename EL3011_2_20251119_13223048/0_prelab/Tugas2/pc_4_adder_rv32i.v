@@ -9,7 +9,7 @@
 
 module pc_4_adder_rv32i (
     input  wire [31:0] PCin,      // Program lama
-    output wire [31:0] PCout    // PCin + 4
+    output wire [31:0] PCoutPlus4    // PCin + 4
 );
-    assign PCout = PCin + 32'd4; // Penjumlahan PCin dengan 4
+    assign PCoutPlus4 = PCin + 32'd4; // Penjumlahan PCin dengan 4
 endmodule
