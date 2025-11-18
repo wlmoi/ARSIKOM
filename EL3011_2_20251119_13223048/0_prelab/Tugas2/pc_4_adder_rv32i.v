@@ -8,8 +8,9 @@
 // Deskripsi  : Desain 4-adder 32-bit untuk perhitungan PCin + 4
 
 module pc_4_adder_rv32i (
-    input  wire [31:0] PCin,      // Program lama
-    output wire [31:0] PCoutPlus4    // PCin + 4
+    input wire [31:0] PCold,     
+    output wire [31:0] PC_4_inc 
 );
-    assign PCoutPlus4 = PCin + 32'd4; // Penjumlahan PCin dengan 4
+    assign PC_4_inc = PCold + 32'd4; 
+
 endmodule
