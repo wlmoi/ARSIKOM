@@ -5,51 +5,37 @@
 // Nama (NIM) 1 : William Anthony (13223048)
 // Nama (NIM) 2 : Agita Trinanda Ilmi (13223003)
 // Nama File  : tb_pc_4_adder_rv32i.v
-// Deskripsi  : Testbench for 32-bit Adder (PCold + 4)
+// Deskripsi  : Testbench untuk 4-adder 32-bit
 
 `timescale 1ns / 1ps
 
 module tb_pc_4_adder_rv32i;
 
-    // Inputs
-    reg [31:0] PCold;
+    // Deklarasi sinyal testbench
+    reg [31:0] PCold_tb;
+    wire [31:0] PC_4_inc_tb;
 
-    // Outputs
-    wire [31:0] PC_4_inc;
-
-    // Instantiate the Unit Under Test (UUT)
+    // Instansiasi Unit Under Test (UUT)
     pc_4_adder_rv32i uut (
-        .PCold(PCold),
-        .PC_4_inc(PC_4_inc)
+        .PCold(PCold_tb),
+        .PC_4_inc(PC_4_inc_tb)
     );
 
     initial begin
-        // Initialize PCold
-        PCold = 32'h00000000;
-        #10;
-        // Expected: PC_4_inc = 00000004
+        // Konfigurasi pencatatan waveform
+        $dumpfile("adder_sim.vcd");
+        $dumpvars(0, tb_pc_4_adder_rv32i);
 
-        // Test Case 1: PCold = 0x00000004
-        PCold = 32'h00000004;
-        #10;
-        // Expected: PC_4_inc = 00000008
+        // Kasus uji: PCold = 0
+        PCold_tb = 32'h00000000; #10; // Harapannya: PC_4_inc = 0x00000004
+        // Kasus uji: PCold = 0x00000004
+        PCold_tb = 32'h00000004; #10; // Harapannya: PC_4_inc = 0x00000008
+        // Kasus uji: PCold mendekati nilai maksimum (wrap-around)
+        PCold_tb = 32'hFFFFFFFC; #10; // Harapannya: PC_4_inc = 0x00000000
+        // Kasus uji: Nilai acak
+        PCold_tb = 32'h12345678; #10; // Harapannya: PC_4_inc = 0x1234567C
 
-        // Test Case 2: PCold = 0xFFFFFFFC (wraps around)
-        PCold = 32'hFFFFFFFC;
-        #10;
-        // Expected: PC_4_inc = 00000000
-
-        // Test Case 3: Arbitrary value
-        PCold = 32'h12345678;
-        #10;
-        // Expected: PC_4_inc = 1234567C
-
-        // Test Case 4: Another arbitrary value
-        PCold = 32'hABCDEF01;
-        #10;
-        // Expected: PC_4_inc = ABCDEF05
-
-        $display("Simulation finished.");
+        $display("Simulasi 4-adder selesai.");
         $finish;
     end
 

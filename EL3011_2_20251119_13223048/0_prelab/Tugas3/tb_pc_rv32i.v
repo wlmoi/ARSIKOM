@@ -5,72 +5,55 @@
 // Nama (NIM) 1 : William Anthony (13223048)
 // Nama (NIM) 2 : Agita Trinanda Ilmi (13223003)
 // Nama File  : tb_pc_rv32i.v
-// Deskripsi  : Testbench for 32-bit Program Counter
+// Deskripsi  : Testbench untuk Program Counter 32-bit
 
 `timescale 1ns / 1ps
 
 module tb_pc_rv32i;
 
-    // Inputs
-    reg        clk;
-    reg        reset;
-    reg [31:0] next_pc;
+    // Deklarasi sinyal testbench
+    reg        clk_tb;
+    reg        reset_tb;
+    reg [31:0] next_pc_tb;
+    wire [31:0] pc_tb;
 
-    // Outputs
-    wire [31:0] pc;
-
-    // Instantiate the Unit Under Test (UUT)
+    // Instansiasi Unit Under Test (UUT)
     pc_rv32i uut (
-        .clk(clk),
-        .reset(reset),
-        .next_pc(next_pc),
-        .pc(pc)
+        .clk(clk_tb),
+        .reset(reset_tb),
+        .next_pc(next_pc_tb),
+        .pc(pc_tb)
     );
 
-    // Clock generation
+    // Generasi clock
     initial begin
-        clk = 0;
-        forever #5 clk = ~clk; // 10 ns clock period
+        clk_tb = 0;
+        forever #5 clk_tb = ~clk_tb; // Perioda clock 10ns
     end
 
     initial begin
-        // Initialize Inputs
-        reset   = 1; // Assert reset
-        next_pc = 32'h1000;
-        #10;
+        // Konfigurasi pencatatan waveform
+        $dumpfile("pc_sim.vcd");
+        $dumpvars(0, tb_pc_rv32i);
 
-        // Deassert reset, PC should be 0, then update to next_pc
-        reset   = 0;
-        #10; // PC should become 0 at posedge clk, then 1000 at next posedge clk
-        next_pc = 32'h1004;
-        #10;
-        // Expected: pc = 1000, then 1004
+        // Inisialisasi: aktifkan reset
+        reset_tb   = 1;
+        next_pc_tb = 32'h1000; #10; // PC harus 0 karena reset
 
-        // Test Case 1: Sequential PC increment
-        next_pc = 32'h1008;
-        #10;
-        next_pc = 32'h100C;
-        #10;
-        // Expected: pc = 1008, then 100C
+        // Nonaktifkan reset, amati pembaruan PC
+        reset_tb   = 0;
+        #10; // PC akan jadi 0, lalu pada posedge clk berikutnya jadi 0x1000
+        next_pc_tb = 32'h1004; #10; // Harapannya: PC = 0x1004
+        next_pc_tb = 32'h1008; #10; // Harapannya: PC = 0x1008
 
-        // Test Case 2: Jump/Branch scenario
-        next_pc = 32'hC000; // Simulate a jump to a new address
-        #10;
-        next_pc = 32'hC004;
-        #10;
-        // Expected: pc = C000, then C004
+        // Skenario lompat/cabang
+        next_pc_tb = 32'hC000; #10; // Harapannya: PC = 0xC000
+        next_pc_tb = 32'hC004; #10; // Harapannya: PC = 0xC004
 
-        // Test Case 3: Re-assert reset
-        reset   = 1;
-        #10;
-        // Expected: pc = 0
+        // Aktifkan reset kembali
+        reset_tb   = 1; #10; // Harapannya: PC = 0
 
-        reset   = 0;
-        next_pc = 32'h2000;
-        #10;
-        // Expected: pc = 2000
-
-        $display("Simulation finished.");
+        $display("Simulasi Program Counter selesai.");
         $finish;
     end
 

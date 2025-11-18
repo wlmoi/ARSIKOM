@@ -5,13 +5,13 @@
 // Nama (NIM) 1 : William Anthony (13223048)
 // Nama (NIM) 2 : Agita Trinanda Ilmi (13223003)
 // Nama File  : mux2to1_rv32i.v
-// Deskripsi  : 32-bit 2-to-1 Multiplexer
+// Deskripsi  : Desain multiplexer 2-ke-1 generik 32-bit
 
 module mux2to1_rv32i #(parameter WIDTH = 32) (
-    input  wire [WIDTH-1:0] in0,
-    input  wire [WIDTH-1:0] in1,
-    input  wire sel,
-    output wire [WIDTH-1:0] out
+    input  wire [WIDTH-1:0] in0, // Input pertama
+    input  wire [WIDTH-1:0] in1, // Input kedua
+    input  wire sel,             // Sinyal seleksi (0 = in0, 1 = in1)
+    output wire [WIDTH-1:0] out  // Output yang dipilih
 );
-    assign out = sel ? in1 : in0;
+    assign out = sel ? in1 : in0; // Logika multiplexer
 endmodule
