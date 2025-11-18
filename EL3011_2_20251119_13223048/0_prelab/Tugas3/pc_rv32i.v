@@ -1,7 +1,7 @@
 // Praktikum EL3011 Arsitektur Sistem Komputer
 // Modul      : 2
 // Percobaan  : 3
-// Tanggal    : 17 November 2025
+// Tanggal    : 19 November 2025
 // Nama (NIM) 1 : William Anthony (13223048)
 // Nama (NIM) 2 : Agita Trinanda Ilmi (13223003)
 // Nama File  : pc_rv32i.v

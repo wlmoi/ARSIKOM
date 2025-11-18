@@ -1,0 +1,259 @@
+Simulator report for imm_select_rv32i
+Mon Nov 17 13:38:03 2025
+Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2010 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 1.0 us       ;
+; Simulation Netlist Size     ; 92 nodes     ;
+; Simulation Coverage         ;      97.83 % ;
+; Total Number of Transitions ; 3364         ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Stratix II   ;
+; Device                      ; EP2S15F484C3 ;
++-----------------------------+--------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                                ;
++--------------------------------------------------------------------------------------------+----------------------+---------------+
+; Option                                                                                     ; Setting              ; Default Value ;
++--------------------------------------------------------------------------------------------+----------------------+---------------+
+; Simulation mode                                                                            ; Timing               ; Timing        ;
+; Start time                                                                                 ; 0 ns                 ; 0 ns          ;
+; Simulation results format                                                                  ; CVWF                 ;               ;
+; Vector input source                                                                        ; imm_select_rv32i.vwf ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On                   ; On            ;
+; Check outputs                                                                              ; Off                  ; Off           ;
+; Report simulation coverage                                                                 ; On                   ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On                   ; On            ;
+; Display missing 1-value coverage report                                                    ; On                   ; On            ;
+; Display missing 0-value coverage report                                                    ; On                   ; On            ;
+; Detect setup and hold time violations                                                      ; Off                  ; Off           ;
+; Detect glitches                                                                            ; Off                  ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off                  ; Off           ;
+; Generate Signal Activity File                                                              ; Off                  ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off                  ; Off           ;
+; Group bus channels in simulation results                                                   ; Off                  ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On                   ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE           ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off                  ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; On                   ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto                 ; Auto          ;
++--------------------------------------------------------------------------------------------+----------------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;      97.83 % ;
+; Total nodes checked                                 ; 92           ;
+; Total output ports checked                          ; 92           ;
+; Total output ports with complete 1/0-value coverage ; 90           ;
+; Total output ports with no 1/0-value coverage       ; 2            ;
+; Total output ports with no 1-value coverage         ; 2            ;
+; Total output ports with no 0-value coverage         ; 2            ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++-----------------------------------------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                                                         ;
++-------------------------------------+--------------------------------------------+------------------+
+; Node Name                           ; Output Port Name                           ; Output Port Type ;
++-------------------------------------+--------------------------------------------+------------------+
+; |imm_select_rv32i|Mux24~0           ; |imm_select_rv32i|Mux24~0                  ; combout          ;
+; |imm_select_rv32i|Mux23~0           ; |imm_select_rv32i|Mux23~0                  ; combout          ;
+; |imm_select_rv32i|Mux22~0           ; |imm_select_rv32i|Mux22~0                  ; combout          ;
+; |imm_select_rv32i|Mux21~0           ; |imm_select_rv32i|Mux21~0                  ; combout          ;
+; |imm_select_rv32i|Mux20~0           ; |imm_select_rv32i|Mux20~0                  ; combout          ;
+; |imm_select_rv32i|imm~0             ; |imm_select_rv32i|imm~0                    ; combout          ;
+; |imm_select_rv32i|imm~1             ; |imm_select_rv32i|imm~1                    ; combout          ;
+; |imm_select_rv32i|imm~2             ; |imm_select_rv32i|imm~2                    ; combout          ;
+; |imm_select_rv32i|imm~3             ; |imm_select_rv32i|imm~3                    ; combout          ;
+; |imm_select_rv32i|imm~4             ; |imm_select_rv32i|imm~4                    ; combout          ;
+; |imm_select_rv32i|imm~5             ; |imm_select_rv32i|imm~5                    ; combout          ;
+; |imm_select_rv32i|Mux19~0           ; |imm_select_rv32i|Mux19~0                  ; combout          ;
+; |imm_select_rv32i|Mux18~0           ; |imm_select_rv32i|Mux18~0                  ; combout          ;
+; |imm_select_rv32i|Mux17~0           ; |imm_select_rv32i|Mux17~0                  ; combout          ;
+; |imm_select_rv32i|Mux16~0           ; |imm_select_rv32i|Mux16~0                  ; combout          ;
+; |imm_select_rv32i|Mux15~0           ; |imm_select_rv32i|Mux15~0                  ; combout          ;
+; |imm_select_rv32i|Mux14~0           ; |imm_select_rv32i|Mux14~0                  ; combout          ;
+; |imm_select_rv32i|Mux13~0           ; |imm_select_rv32i|Mux13~0                  ; combout          ;
+; |imm_select_rv32i|Mux12~0           ; |imm_select_rv32i|Mux12~0                  ; combout          ;
+; |imm_select_rv32i|Mux11~0           ; |imm_select_rv32i|Mux11~0                  ; combout          ;
+; |imm_select_rv32i|Mux10~0           ; |imm_select_rv32i|Mux10~0                  ; combout          ;
+; |imm_select_rv32i|Mux9~0            ; |imm_select_rv32i|Mux9~0                   ; combout          ;
+; |imm_select_rv32i|Mux8~0            ; |imm_select_rv32i|Mux8~0                   ; combout          ;
+; |imm_select_rv32i|Mux7~0            ; |imm_select_rv32i|Mux7~0                   ; combout          ;
+; |imm_select_rv32i|Mux6~0            ; |imm_select_rv32i|Mux6~0                   ; combout          ;
+; |imm_select_rv32i|Mux5~0            ; |imm_select_rv32i|Mux5~0                   ; combout          ;
+; |imm_select_rv32i|Mux4~0            ; |imm_select_rv32i|Mux4~0                   ; combout          ;
+; |imm_select_rv32i|Mux3~0            ; |imm_select_rv32i|Mux3~0                   ; combout          ;
+; |imm_select_rv32i|Mux2~0            ; |imm_select_rv32i|Mux2~0                   ; combout          ;
+; |imm_select_rv32i|Mux1~0            ; |imm_select_rv32i|Mux1~0                   ; combout          ;
+; |imm_select_rv32i|Mux0~0            ; |imm_select_rv32i|Mux0~0                   ; combout          ;
+; |imm_select_rv32i|imm~6             ; |imm_select_rv32i|imm~6                    ; combout          ;
+; |imm_select_rv32i|imm[0]            ; |imm_select_rv32i|imm[0]                   ; padio            ;
+; |imm_select_rv32i|imm[1]            ; |imm_select_rv32i|imm[1]                   ; padio            ;
+; |imm_select_rv32i|imm[2]            ; |imm_select_rv32i|imm[2]                   ; padio            ;
+; |imm_select_rv32i|imm[3]            ; |imm_select_rv32i|imm[3]                   ; padio            ;
+; |imm_select_rv32i|imm[4]            ; |imm_select_rv32i|imm[4]                   ; padio            ;
+; |imm_select_rv32i|imm[5]            ; |imm_select_rv32i|imm[5]                   ; padio            ;
+; |imm_select_rv32i|imm[6]            ; |imm_select_rv32i|imm[6]                   ; padio            ;
+; |imm_select_rv32i|imm[7]            ; |imm_select_rv32i|imm[7]                   ; padio            ;
+; |imm_select_rv32i|imm[8]            ; |imm_select_rv32i|imm[8]                   ; padio            ;
+; |imm_select_rv32i|imm[9]            ; |imm_select_rv32i|imm[9]                   ; padio            ;
+; |imm_select_rv32i|imm[10]           ; |imm_select_rv32i|imm[10]                  ; padio            ;
+; |imm_select_rv32i|imm[11]           ; |imm_select_rv32i|imm[11]                  ; padio            ;
+; |imm_select_rv32i|imm[12]           ; |imm_select_rv32i|imm[12]                  ; padio            ;
+; |imm_select_rv32i|imm[13]           ; |imm_select_rv32i|imm[13]                  ; padio            ;
+; |imm_select_rv32i|imm[14]           ; |imm_select_rv32i|imm[14]                  ; padio            ;
+; |imm_select_rv32i|imm[15]           ; |imm_select_rv32i|imm[15]                  ; padio            ;
+; |imm_select_rv32i|imm[16]           ; |imm_select_rv32i|imm[16]                  ; padio            ;
+; |imm_select_rv32i|imm[17]           ; |imm_select_rv32i|imm[17]                  ; padio            ;
+; |imm_select_rv32i|imm[18]           ; |imm_select_rv32i|imm[18]                  ; padio            ;
+; |imm_select_rv32i|imm[19]           ; |imm_select_rv32i|imm[19]                  ; padio            ;
+; |imm_select_rv32i|imm[20]           ; |imm_select_rv32i|imm[20]                  ; padio            ;
+; |imm_select_rv32i|imm[21]           ; |imm_select_rv32i|imm[21]                  ; padio            ;
+; |imm_select_rv32i|imm[22]           ; |imm_select_rv32i|imm[22]                  ; padio            ;
+; |imm_select_rv32i|imm[23]           ; |imm_select_rv32i|imm[23]                  ; padio            ;
+; |imm_select_rv32i|imm[24]           ; |imm_select_rv32i|imm[24]                  ; padio            ;
+; |imm_select_rv32i|imm[25]           ; |imm_select_rv32i|imm[25]                  ; padio            ;
+; |imm_select_rv32i|imm[26]           ; |imm_select_rv32i|imm[26]                  ; padio            ;
+; |imm_select_rv32i|imm[27]           ; |imm_select_rv32i|imm[27]                  ; padio            ;
+; |imm_select_rv32i|imm[28]           ; |imm_select_rv32i|imm[28]                  ; padio            ;
+; |imm_select_rv32i|imm[29]           ; |imm_select_rv32i|imm[29]                  ; padio            ;
+; |imm_select_rv32i|imm[30]           ; |imm_select_rv32i|imm[30]                  ; padio            ;
+; |imm_select_rv32i|imm[31]           ; |imm_select_rv32i|imm[31]                  ; padio            ;
+; |imm_select_rv32i|trimmed_instr[0]  ; |imm_select_rv32i|trimmed_instr[0]~corein  ; combout          ;
+; |imm_select_rv32i|cu_immtype[0]     ; |imm_select_rv32i|cu_immtype[0]~corein     ; combout          ;
+; |imm_select_rv32i|trimmed_instr[13] ; |imm_select_rv32i|trimmed_instr[13]~corein ; combout          ;
+; |imm_select_rv32i|cu_immtype[1]     ; |imm_select_rv32i|cu_immtype[1]~corein     ; combout          ;
+; |imm_select_rv32i|cu_immtype[2]     ; |imm_select_rv32i|cu_immtype[2]~corein     ; combout          ;
+; |imm_select_rv32i|trimmed_instr[1]  ; |imm_select_rv32i|trimmed_instr[1]~corein  ; combout          ;
+; |imm_select_rv32i|trimmed_instr[14] ; |imm_select_rv32i|trimmed_instr[14]~corein ; combout          ;
+; |imm_select_rv32i|trimmed_instr[2]  ; |imm_select_rv32i|trimmed_instr[2]~corein  ; combout          ;
+; |imm_select_rv32i|trimmed_instr[15] ; |imm_select_rv32i|trimmed_instr[15]~corein ; combout          ;
+; |imm_select_rv32i|trimmed_instr[3]  ; |imm_select_rv32i|trimmed_instr[3]~corein  ; combout          ;
+; |imm_select_rv32i|trimmed_instr[16] ; |imm_select_rv32i|trimmed_instr[16]~corein ; combout          ;
+; |imm_select_rv32i|trimmed_instr[4]  ; |imm_select_rv32i|trimmed_instr[4]~corein  ; combout          ;
+; |imm_select_rv32i|trimmed_instr[17] ; |imm_select_rv32i|trimmed_instr[17]~corein ; combout          ;
+; |imm_select_rv32i|trimmed_instr[18] ; |imm_select_rv32i|trimmed_instr[18]~corein ; combout          ;
+; |imm_select_rv32i|trimmed_instr[19] ; |imm_select_rv32i|trimmed_instr[19]~corein ; combout          ;
+; |imm_select_rv32i|trimmed_instr[20] ; |imm_select_rv32i|trimmed_instr[20]~corein ; combout          ;
+; |imm_select_rv32i|trimmed_instr[21] ; |imm_select_rv32i|trimmed_instr[21]~corein ; combout          ;
+; |imm_select_rv32i|trimmed_instr[22] ; |imm_select_rv32i|trimmed_instr[22]~corein ; combout          ;
+; |imm_select_rv32i|trimmed_instr[23] ; |imm_select_rv32i|trimmed_instr[23]~corein ; combout          ;
+; |imm_select_rv32i|trimmed_instr[24] ; |imm_select_rv32i|trimmed_instr[24]~corein ; combout          ;
+; |imm_select_rv32i|trimmed_instr[5]  ; |imm_select_rv32i|trimmed_instr[5]~corein  ; combout          ;
+; |imm_select_rv32i|trimmed_instr[6]  ; |imm_select_rv32i|trimmed_instr[6]~corein  ; combout          ;
+; |imm_select_rv32i|trimmed_instr[8]  ; |imm_select_rv32i|trimmed_instr[8]~corein  ; combout          ;
+; |imm_select_rv32i|trimmed_instr[9]  ; |imm_select_rv32i|trimmed_instr[9]~corein  ; combout          ;
+; |imm_select_rv32i|trimmed_instr[10] ; |imm_select_rv32i|trimmed_instr[10]~corein ; combout          ;
+; |imm_select_rv32i|trimmed_instr[11] ; |imm_select_rv32i|trimmed_instr[11]~corein ; combout          ;
++-------------------------------------+--------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++-----------------------------------------------------------------------------------------------------+
+; Missing 1-Value Coverage                                                                            ;
++-------------------------------------+--------------------------------------------+------------------+
+; Node Name                           ; Output Port Name                           ; Output Port Type ;
++-------------------------------------+--------------------------------------------+------------------+
+; |imm_select_rv32i|trimmed_instr[7]  ; |imm_select_rv32i|trimmed_instr[7]~corein  ; combout          ;
+; |imm_select_rv32i|trimmed_instr[12] ; |imm_select_rv32i|trimmed_instr[12]~corein ; combout          ;
++-------------------------------------+--------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++-----------------------------------------------------------------------------------------------------+
+; Missing 0-Value Coverage                                                                            ;
++-------------------------------------+--------------------------------------------+------------------+
+; Node Name                           ; Output Port Name                           ; Output Port Type ;
++-------------------------------------+--------------------------------------------+------------------+
+; |imm_select_rv32i|trimmed_instr[7]  ; |imm_select_rv32i|trimmed_instr[7]~corein  ; combout          ;
+; |imm_select_rv32i|trimmed_instr[12] ; |imm_select_rv32i|trimmed_instr[12]~corein ; combout          ;
++-------------------------------------+--------------------------------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II Simulator
+    Info: Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+    Info: Processing started: Mon Nov 17 13:38:03 2025
+Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off imm_select_rv32i -c imm_select_rv32i
+Info: Using vector source file "C:/Users/ahmad/OneDrive - Institut Teknologi Bandung/Laptop/Lain-Lain/Semester 5/Arsikom/EL3011_2_20251117_13223112/1_Lab/Tugas 2/imm_select_rv32i.vwf"
+Info: Overwriting simulation input file with simulation results
+    Info: A backup of imm_select_rv32i.vwf called imm_select_rv32i.sim_ori.vwf has been created in the db folder
+Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info: Simulation partitioned into 1 sub-simulations
+Info: Simulation coverage is      97.83 %
+Info: Number of transitions in simulation is 3364
+Info: Vector file imm_select_rv32i.vwf is saved in VWF text format. You can compress it into CVWF format in order to reduce file size. For more details please refer to the Quartus II Help.
+Info: Quartus II Simulator was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 162 megabytes
+    Info: Processing ended: Mon Nov 17 13:38:03 2025
+    Info: Elapsed time: 00:00:00
+    Info: Total CPU time (on all processors): 00:00:00
+
+
