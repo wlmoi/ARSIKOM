@@ -1,0 +1,304 @@
+$comment
+Copyright (C) 1991-2010 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+$end
+
+$date 
+  11/19/2025 13:26:00 
+$end
+$version 
+ QUARTUS_VCD_EXPORT 1.0 
+$end
+$timescale
+  1 ps
+$end
+$scope module ctrl_unit_rv32i $end
+$var reg 1 ! cu_ALU1src $end
+$var reg 1 " cu_ALU2src $end
+$var reg 2 # cu_ALUtype[1:0] $end
+$var reg 1 $ cu_PCtype $end
+$var reg 1 % cu_adtype $end
+$var reg 1 & cu_branch $end
+$var reg 3 ' cu_branchtype[2:0] $end
+$var reg 2 ( cu_gatype[1:0] $end
+$var reg 3 ) cu_immtype[2:0] $end
+$var reg 3 * cu_loadtype[2:0] $end
+$var reg 2 + cu_rdtype[1:0] $end
+$var reg 1 , cu_rdwrite $end
+$var reg 2 - cu_shiftype[1:0] $end
+$var reg 1 . cu_sltype $end
+$var reg 1 / cu_store $end
+$var reg 2 0 cu_storetype[1:0] $end
+$var reg 3 1 funct3[2:0] $end
+$var reg 7 2 funct7[6:0] $end
+$var reg 7 3 opcode[6:0] $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+1!
+1"
+b0 #
+1$
+0%
+1&
+b0 '
+b0 (
+b100 )
+b10 *
+b10 +
+1,
+b0 -
+0.
+0/
+b0 0
+b0 1
+b110011 2
+b1101111 3
+$end
+#20000
+b1 1
+b1110010 3
+#28713
+b0 )
+#28981
+0,
+#29278
+0!
+#29352
+0&
+#29452
+b0 +
+#29464
+0$
+#29858
+0"
+#40000
+b10 1
+b1110101 3
+#60000
+b11 1
+b1111000 3
+#80000
+b100 1
+b0 2
+b1111011 3
+#100000
+b101 1
+b1111110 3
+#120000
+b110 1
+b1 3
+#140000
+b111 1
+b100 3
+#160000
+b0 1
+b111 3
+#180000
+b1 1
+b1010 3
+#200000
+b10 1
+b1101 3
+#220000
+b11 1
+b10000 3
+#240000
+b100 1
+b10011 3
+#249527
+1,
+#249858
+1"
+#250339
+b10 (
+#250342
+b1 #
+#260000
+b101 1
+b10110 3
+#269446
+b0 (
+#269527
+0,
+#269714
+b11 #
+#269858
+0"
+#269916
+b1 -
+#270060
+b10 #
+#270609
+b0 #
+#270811
+b0 -
+#280000
+b110 1
+b11001 3
+#300000
+b111 1
+b11100 3
+#320000
+b0 1
+b11111 3
+#340000
+b1 1
+b100010 3
+#360000
+b10 1
+b100101 3
+#380000
+b11 1
+b101000 3
+#400000
+b100 1
+b101011 3
+#420000
+b101 1
+b101110 3
+#440000
+b110 1
+b110001 3
+#460000
+b111 1
+b110100 3
+#480000
+b0 1
+b110111 3
+#488853
+b10 )
+#488937
+b11 )
+#489459
+b10 +
+#489527
+1,
+#489804
+b11 +
+#489858
+1"
+#500000
+b1 1
+b111010 3
+#508811
+b1 )
+#509073
+b0 )
+#509168
+b10 +
+#509452
+b0 +
+#509527
+0,
+#509858
+0"
+#520000
+b10 1
+b111101 3
+#540000
+b11 1
+b1000000 3
+#560000
+b100 1
+b1000011 3
+#580000
+b101 1
+b1000110 3
+#600000
+b110 1
+b1001001 3
+#620000
+b111 1
+b1001100 3
+#640000
+b0 1
+b1001111 3
+#660000
+b1 1
+b1010010 3
+#680000
+b10 1
+b1010101 3
+#700000
+b11 1
+b1011000 3
+#720000
+b100 1
+b1011011 3
+#740000
+b101 1
+b1011110 3
+#760000
+b110 1
+b1100001 3
+#780000
+b111 1
+b1100100 3
+#800000
+b0 1
+b1100111 3
+#809351
+1,
+#809459
+b10 +
+#809749
+1&
+#809858
+1"
+#809861
+1$
+#820000
+b1 1
+b1101010 3
+#828981
+0,
+#829452
+b0 +
+#829539
+0&
+#829651
+0$
+#829858
+0"
+#840000
+b10 1
+b1101101 3
+#849600
+b100 )
+#849970
+b0 )
+#860000
+b11 1
+b1110000 3
+#880000
+b100 1
+b1110011 3
+#900000
+b101 1
+b1110110 3
+#920000
+b110 1
+b1111001 3
+#940000
+b111 1
+b1111100 3
+#960000
+b0 1
+b1111111 3
+#980000
+b1 1
+b10 3
+#1000000

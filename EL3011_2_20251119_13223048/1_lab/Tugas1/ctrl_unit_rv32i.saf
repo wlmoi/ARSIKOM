@@ -1,0 +1,130 @@
+# Copyright (C) 1991-2010 Altera Corporation
+# Your use of Altera Corporation's design tools, logic functions 
+# and other software and tools, and its AMPP partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Altera Program License 
+# Subscription Agreement, Altera MegaCore Function License 
+# Agreement, or other applicable license agreement, including, 
+# without limitation, that your use is for the sole purpose of 
+# programming logic devices manufactured by Altera and sold by 
+# Altera or its authorized distributors.  Please refer to the 
+# applicable agreement for further details.
+
+# Signal Activity File Name: "D:/ARSIKOM/EL3011_2_20251119_13223048/1_lab/Tugas 1/ctrl_unit_rv32i.saf"
+# Created On: "11/19/2025 13:26:00"
+# Created By: "Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition"
+# This file was created by the Quartus(R) II Simulator with glitch filtering enabled.
+
+FORMAT_VERSION 1;
+
+DEFINE_FLAG TOGGLE_RATE_FROM_SIMULATION 0x1;
+DEFINE_FLAG STATIC_PROBABILITY_FROM_SIMULATION 0x2;
+DEFINE_FLAG TOGGLE_RATE_FROM_USER 0x4;
+DEFINE_FLAG STATIC_PROBABILITY_FROM_USER 0x8;
+DEFINE_FLAG TOGGLE_RATE_FROM_USER_DEFAULT 0x10;
+DEFINE_FLAG STATIC_PROBABILITY_FROM_USER_DEFAULT 0x20;
+DEFINE_FLAG TOGGLE_RATE_FROM_VECTORLESS_ESTIMATION 0x40;
+DEFINE_FLAG STATIC_PROBABILITY_FROM_VECTORLESS_ESTIMATION 0x80;
+DEFINE_FLAG TOGGLE_RATE_ASSUMED_ZERO 0x100;
+DEFINE_FLAG TOGGLE_RATE_CLIPPED_TO_MAX 0x200;
+
+BEGIN_OUTPUT_SIGNAL_INFO;
+
+# Output Signal Information Line Format Description:
+
+# <one or more spaces><partial output signal name><spaces>[<flags mask><spaces><toggle rate><spaces><static probability>]<;>
+
+ Decoder2~0 0x3 5e+006 0.045239;
+ Decoder2~1 0x3 3e+006 0.026136;
+ Decoder2~2 0x3 0 0;
+ Decoder2~3 0x3 1.9e+007 0.254002;
+ Selector0~0 0x3 2e+006 0.999105;
+ Selector1~0 0x3 2e+006 0.980282;
+ Selector2~0 0x3 2e+006 0.019107;
+ Selector3~0 0x3 0 0;
+ Selector4~0 0x3 0 0;
+ Selector5~0 0x3 2e+006 0.000895;
+ Selector6~0 0x3 0 0;
+ WideOr4~0 0x3 1.3e+007 0.08548;
+ WideOr4~1 0x3 1e+006 0.025989;
+ WideOr5~0 0x3 1.6e+007 0.259448;
+ WideOr5~1 0x3 7e+006 0.085989;
+ WideOr6~0 0x3 2e+007 0.160304;
+ WideOr6~1 0x3 2e+006 0.019958;
+ WideOr7~0 0x3 3e+007 0.161111;
+ WideOr7~1 0x3 2e+006 0.020136;
+ WideOr8~0 0x3 1.9e+007 0.20576;
+ WideOr8~1 0x3 5e+006 0.066023;
+ WideOr9~0 0x3 6e+006 0.06;
+ WideOr9~1 0x3 7e+006 0.085139;
+ WideOr10~0 0x3 1.9e+007 0.203348;
+ WideOr10~1 0x3 3e+006 0.04527;
+ WideOr11~0 0x3 2e+006 0.02;
+ WideOr11~1 0x3 4e+006 0.02;
+ cu_ALU1src 0x3 1e+006 0.029278;
+ cu_ALU2src 0x3 7e+006 0.089858;
+ cu_ALUtype[0] 0x3 2e+006 0.019718;
+ cu_ALUtype[1] 0x3 2e+006 0.000895;
+ cu_PCtype 0x3 3e+006 0.049254;
+ cu_adtype 0x3 0 0;
+ cu_adtype~0 0x3 1e+006 0.913944;
+ cu_adtype~1 0x3 3e+006 0.046622;
+ cu_adtype~2 0x3 0 0;
+ cu_branch 0x3 3e+006 0.049142;
+ cu_branchtype[0] 0x3 0 0;
+ cu_branchtype[1] 0x3 0 0;
+ cu_branchtype[2] 0x3 0 0;
+ cu_branchtype~0 0x3 0 0;
+ cu_branchtype~1 0x3 0 0;
+ cu_branchtype~2 0x3 2e+006 8.9e-005;
+ cu_gatype[0] 0x3 0 0;
+ cu_gatype[1] 0x3 2e+006 0.019107;
+ cu_immtype[0] 0x3 2e+006 0.020136;
+ cu_immtype[1] 0x3 2e+006 0.019958;
+ cu_immtype[2] 0x3 3e+006 0.029083;
+ cu_loadtype[0] 0x3 0 0;
+ cu_loadtype[1] 0x3 0 0.990299;
+ cu_loadtype[2] 0x3 0 0;
+ cu_loadtype~0 0x3 2.4e+007 0.24;
+ cu_loadtype~1 0x3 0 0;
+ cu_loadtype~2 0x3 0 0.993706;
+ cu_loadtype~3 0x3 0 0;
+ cu_rdtype[0] 0x3 2e+006 0.019364;
+ cu_rdtype[1] 0x3 5e+006 0.069438;
+ cu_rdtype~0 0x3 1.8e+007 0.139512;
+ cu_rdtype~1 0x3 4e+006 0.019485;
+ cu_rdwrite 0x3 7e+006 0.088611;
+ cu_shiftype[0] 0x3 2e+006 0.000895;
+ cu_shiftype[1] 0x3 0 0;
+ cu_sltype 0x3 0 0;
+ cu_store 0x3 0 0;
+ cu_storetype[0] 0x3 0 0;
+ cu_storetype[1] 0x3 0 0;
+ cu_storetype~0 0x3 0 0;
+ cu_storetype~1 0x3 0 0;
+ funct3[0] 0x3 4.9e+007 0.5;
+ funct3[1] 0x3 2.4e+007 0.48;
+ funct3[2] 0x3 1.2e+007 0.48;
+ funct7[0] 0x3 1e+006 0.08;
+ funct7[1] 0x3 1e+006 0.08;
+ funct7[2] 0x3 0 0;
+ funct7[3] 0x3 0 0;
+ funct7[4] 0x3 1e+006 0.08;
+ funct7[5] 0x3 1e+006 0.08;
+ funct7[6] 0x3 0 0;
+ opcode[0] 0x3 4.9e+007 0.5;
+ opcode[1] 0x3 2.4e+007 0.52;
+ opcode[2] 0x3 3.7e+007 0.5;
+ opcode[3] 0x3 1.9e+007 0.5;
+ opcode[4] 0x3 1e+007 0.54;
+ opcode[5] 0x3 5e+006 0.54;
+ opcode[6] 0x3 3e+006 0.56;
+
+END_OUTPUT_SIGNAL_INFO;
+
+TOGGLE_PERCENTAGE 67.0588;
+
+PERCENTAGE_OF_TIME_SIGNALS_IN_UNKNOWN_STATE 0;
+
