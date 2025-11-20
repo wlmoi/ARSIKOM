@@ -1,0 +1,48 @@
+#! /c/Source/iverilog-install/bin/vvp
+:ivl_version "12.0 (devel)" "(s20150603-1539-g2693dd32b)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision - 12;
+:vpi_module "C:\iverilog\lib\ivl\system.vpi";
+:vpi_module "C:\iverilog\lib\ivl\vhdl_sys.vpi";
+:vpi_module "C:\iverilog\lib\ivl\vhdl_textio.vpi";
+:vpi_module "C:\iverilog\lib\ivl\v2005_math.vpi";
+:vpi_module "C:\iverilog\lib\ivl\va_math.vpi";
+S_000001ffb9c69e00 .scope module, "tb_pc_4_adder_rv32i" "tb_pc_4_adder_rv32i" 2 12;
+ .timescale -9 -12;
+v000001ffb9cb57b0_0 .var "PCin_tb", 31 0;
+v000001ffb9cb5850_0 .net "PCout_tb", 31 0, L_000001ffb9cb58f0;  1 drivers
+S_000001ffb9cb5580 .scope module, "uut" "pc_4_adder_rv32i" 2 19, 3 10 0, S_000001ffb9c69e00;
+ .timescale 0 0;
+    .port_info 0 /INPUT 32 "PCin";
+    .port_info 1 /OUTPUT 32 "PCoutPlus4";
+v000001ffb9c83000_0 .net "PCin", 31 0, v000001ffb9cb57b0_0;  1 drivers
+v000001ffb9c82c30_0 .net "PCoutPlus4", 31 0, L_000001ffb9cb58f0;  alias, 1 drivers
+L_000001ffb9cfb848 .functor BUFT 1, C4<00000000000000000000000000000100>, C4<0>, C4<0>, C4<0>;
+v000001ffb9cb5710_0 .net/2u *"_ivl_0", 31 0, L_000001ffb9cfb848;  1 drivers
+L_000001ffb9cb58f0 .arith/sum 32, v000001ffb9cb57b0_0, L_000001ffb9cfb848;
+    .scope S_000001ffb9c69e00;
+T_0 ;
+    %vpi_call 2 26 "$dumpfile", "adder_sim.vcd" {0 0 0};
+    %vpi_call 2 27 "$dumpvars", 32'sb00000000000000000000000000000000, S_000001ffb9c69e00 {0 0 0};
+    %pushi/vec4 0, 0, 32;
+    %store/vec4 v000001ffb9cb57b0_0, 0, 32;
+    %delay 10000, 0;
+    %pushi/vec4 4, 0, 32;
+    %store/vec4 v000001ffb9cb57b0_0, 0, 32;
+    %delay 10000, 0;
+    %pushi/vec4 4294967292, 0, 32;
+    %store/vec4 v000001ffb9cb57b0_0, 0, 32;
+    %delay 10000, 0;
+    %pushi/vec4 305419896, 0, 32;
+    %store/vec4 v000001ffb9cb57b0_0, 0, 32;
+    %delay 10000, 0;
+    %vpi_call 2 38 "$display", "Simulasi 4-adder selesai." {0 0 0};
+    %vpi_call 2 39 "$finish" {0 0 0};
+    %end;
+    .thread T_0;
+# The file index is used to find the file name in the following table.
+:file_names 4;
+    "N/A";
+    "<interactive>";
+    "tb_pc_4_adder_rv32i.v";
+    "pc_4_adder_rv32i.v";
