@@ -33,7 +33,6 @@ module ctrl_unit_rv32i (
 
 always @ (*) 
 begin
-    // [Register di cite: 146-187]
     cu_ALU1src    = 1'b0; // Dari rs1
     cu_ALU2src    = 1'b0; // Dari rs2
     cu_immtype    = 3'b000; // I-type
